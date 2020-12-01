@@ -4,7 +4,6 @@ import './index.scss';
 import {useDispatch, useSelector} from 'react-redux';
 import {logout} from 'api/auth';
 import useLocalStorage from '../../effects/useLocalStorage.effect';
-import {getItemFromStorage} from '../../utils/helper';
 
 const MenuList = () => {
   const {isAuthenticated} = useSelector((state) => state.user);
@@ -18,9 +17,13 @@ const MenuList = () => {
         name="Cart"
         link="/cart"
         image="/img/shopping-bag.svg">
-        <span className="basket-product-count">
-          {Object.keys(cartIds).length}
-        </span>
+        {Object.keys(cartIds).length > 0 ? (
+          <span className="basket-product-count">
+            {Object.keys(cartIds).length}
+          </span>
+        ) : (
+          ''
+        )}
       </MenuItem.MenuItemImage>
       <MenuItem.MenuItemImage
         onClick={() => dispatch(logout())}

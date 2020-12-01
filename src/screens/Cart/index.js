@@ -54,9 +54,9 @@ const Cart = () => {
   const total = () => {
     let totalPrice = 0;
     for (let i = 0; i < cartItems.length; i++) {
-      productCount += getItemFromStorage(cartItems[i].id).count;
+      productCount += getItemFromStorage(cartItems[i].id)?.count;
       totalPrice +=
-        getItemFromStorage(cartItems[i].id).count * cartItems[i].price;
+        getItemFromStorage(cartItems[i].id)?.count * cartItems[i].price;
     }
     return totalPrice;
   };

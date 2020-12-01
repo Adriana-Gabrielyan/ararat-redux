@@ -41,7 +41,6 @@ function App(props) {
       <Router>
         <Provider store={store}>
           <Header />
-
           <Routes />
         </Provider>
       </Router>

@@ -1,0 +1,35 @@
+@import "../global/variables";
+.btn-outline-gold {
+  background-image: url("button.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  color: $brown-light;
+  text-align: center;
+  border: 0;
+  padding: 12px 27px;
+  font: 16px/22px $font-regular-2;
+  background-size: 100% 100%;
+  transition: .3s all;
+  display: inline-block;
+  text-transform: uppercase;
+
+  &:hover {
+    background-image: url("button_hover.png");
+    transition: .3s all;
+    color: $brown-light;
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:lang(ru),
+  &:lang(hy) {
+    text-transform: none;
+    padding: 12px 8px;
+    font-size: 14px;
+    min-width: 150px;
+  }
+}

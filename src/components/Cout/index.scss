@@ -1,0 +1,47 @@
+@import "../global/variables";
+.count{
+  .sub{
+    bottom: 16px;
+    transform: rotate(45deg);
+  }
+  .add{
+    top: 14px;
+    transform: rotate(-135deg);
+  }
+
+  input[type='number'] {
+    width: 90px;
+    height: 44px;
+    background: white;
+    border: 1px solid $gold;
+    margin-left: 30px;
+    padding: 5px 25px 5px 16px;
+    color: $brown-light;
+  }
+  .sub, .add{
+    position: absolute;
+    right: 16px;
+    width: 5px;
+    height: 5px;
+    border-width: 0 1px 1px 0;
+    border-color: $brown-light;
+    border-style: solid;
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.count-buttons {
+  button, input {
+    width: 46px;
+    height: 44px;
+    border: 1px solid $gold;
+  }
+
+  input {
+    color: $brown-light;
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+  }
+}

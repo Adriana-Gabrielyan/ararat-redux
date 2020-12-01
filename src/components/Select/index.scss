@@ -1,0 +1,12 @@
+select {
+  word-wrap: normal;
+  border: 1px solid #af8d54;
+  background: #fbfafa;
+  padding: 12px;
+  border-radius: 3px;
+  margin-right: 15px;
+  &:focus{
+    outline: none;
+    box-shadow: none;
+  }
+}

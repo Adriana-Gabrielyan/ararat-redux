@@ -1,0 +1,77 @@
+@import "../../components/global/variables";
+
+.payment-page {
+  max-width: 1178px;
+  margin: 0 auto;
+  padding: 38px 15px;
+
+  .title {
+    font: 16px/17px $font-regular-2;
+    margin-bottom: 22px;
+  }
+
+
+  .price {
+    margin: 35px 0 7px;
+
+    span {
+      &:first-child {
+        font: 16px/17px $font-regular-2;
+      }
+
+      &:last-child {
+        font: 20px/24px $font-regular;
+        @media (max-width: 991px) {
+          font: 19px/24px $font-regular;
+        }
+      }
+    }
+  }
+
+  .subtotal {
+    max-width: 377px;
+    width: 100%;
+    margin-left: 20px;
+    @media (max-width: 767px) {
+      margin-left: 0;
+    }
+
+    .selected-product-content {
+      background: #FBFAFA;
+      padding: 27px 39px 28px 26px;
+    }
+
+    .product-count {
+      margin: 20px 0 58px;
+    }
+
+    .total, .product-count {
+      font: 16px/17px $font-regular-2;
+    }
+  }
+
+}
+
+.back {
+  font: 16px/17px $font-regular-2;
+  color: $gold;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    text-decoration: none;
+    color: $gold;
+  }
+
+  &:before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-left: 1px solid $brown-light;
+    border-bottom: 1px solid $brown-light;
+    display: block;
+    transform: rotate(45deg);
+    margin-right: 7px;
+  }
+}

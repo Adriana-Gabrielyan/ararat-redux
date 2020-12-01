@@ -1,0 +1,12 @@
+.products-page {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 26px 42px 26px 15px;
+  @media (max-width: 785px) {
+    padding: 26px 15px;
+  }
+
+  .products-page-content {
+    padding-top: 19px;
+  }
+}

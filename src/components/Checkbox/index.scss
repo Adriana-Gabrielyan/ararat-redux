@@ -1,0 +1,40 @@
+@import "../global/variables";
+
+label {
+  font: 14px/17px $font-regular;
+  color: $brown-light;
+  cursor: pointer;
+  position: relative;
+  padding: 9px 36px 5px 22px;
+
+  span {
+    position: relative;
+    z-index: -1;
+  }
+
+  &.checked {
+    color: $gold;
+
+    &:before {
+      border-left: 1px solid $gold;
+      border-bottom: 1px solid $gold;
+    }
+  }
+
+  &:before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-left: 1px solid $brown-light;
+    border-bottom: 1px solid $brown-light;
+    display: inline-block;
+    transform: rotate(224deg);
+    position: absolute;
+    top: 15px;
+    left: 0;
+  }
+
+  input {
+    display: none;
+  }
+}

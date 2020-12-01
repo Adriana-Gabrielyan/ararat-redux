@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+@font-face {
+  font-family: "Helvetica Neue Regular";
+  src: url("../fonts/Helvetica Neue Regular.eot");
+  src: url("../fonts/Helvetica Neue Regular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/Helvetica Neue Regular.woff2") format("woff2"),
+  url("../fonts/Helvetica Neue Regular.woff") format("woff"),
+  url("../fonts/Helvetica Neue Regular.ttf") format("truetype"),
+  url("../fonts/Helvetica Neue Regular.svg") format("svg");
+  font-display: swap;
+}
+@font-face {
+  font-family: "EngraversGothic BT";
+  src: url("../fonts/EngraversGothic BT.eot");
+  src: url("../fonts/EngraversGothic BT.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/EngraversGothic BT.woff2") format("woff2"),
+  url("../fonts/EngraversGothic BT.woff") format("woff"),
+  url("../fonts/EngraversGothic BT.ttf") format("truetype"),
+  url("../fonts/EngraversGothic BT.svg") format("svg");
+  font-display: swap;
+}

@@ -1,0 +1,42 @@
+@import "../global/variables";
+.selected-product {
+  max-width: 572px;
+  width: 100%;
+  margin-right: 20px;
+  @media (max-width: 767px) {
+    margin-right: 0;
+  }
+  .selected-product-content {
+    background: #FBFAFA;
+    padding: 21px 33px 21px 39px;
+  }
+
+
+  .payment-img {
+    height: 183px;
+    width: 85px;
+    flex: 0 0 85px;
+
+    img {
+      object-fit: contain;
+      max-height: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+
+  .logo-img {
+    max-width: 96px;
+    margin: 4px 0 0 26px;
+  }
+
+  .delete {
+    color: #FC940B;
+    font: 16px/17px $font-regular-2;
+  }
+
+
+
+
+}

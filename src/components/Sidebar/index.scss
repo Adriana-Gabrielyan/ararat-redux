@@ -1,0 +1,22 @@
+@import "../global/variables";
+.filter-title {
+  width: 100%;
+  display: block;
+  padding: 9px 23px;
+  margin-bottom: 27px;
+  background: #EBE1D1;
+  font: 20px/22px $font-regular-2;
+}
+.products-sidebar {
+  width: 252px;
+  flex: 0 0 252px;
+  max-width: 100%;
+  margin-top: 15px;
+  .price-filter input {
+    border: 1px solid #dedede;
+    width: 94px;
+    height: 40px;
+    padding: 9px;
+  }
+}
+

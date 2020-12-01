@@ -1,0 +1,45 @@
+@import "../global/variables";
+.home-banner-slider {
+  position: relative;
+
+
+
+  .home-banner-img, .slick-slide * {
+    height: calc(100vh - 118px);
+    @media (max-width: 575px) {
+      height: calc(100vh - 94px);
+    }
+  }
+
+  .home-banner-img {
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: relative;
+  }
+
+  .slick-dots {
+    bottom: 42px;
+
+    li {
+      width: 13px;
+      height: 13px;
+      margin: 0 10px;
+
+      &.slick-active {
+        button {
+          &:before {
+            border: solid 1px $gold;
+            background-color: $gold;
+          }
+        }
+      }
+
+      button {
+        &:before {
+          border: solid 1px $gold;
+        }
+      }
+    }
+  }
+}

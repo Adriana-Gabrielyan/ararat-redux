@@ -1,0 +1,11 @@
+.products {
+  max-width: 716px;
+  width: 100%;
+  @media (max-width: 1022px) {
+    max-width: 476px;
+  }
+  @media (max-width: 767px) {
+    justify-content: center;
+    max-width: 100%;
+  }
+}

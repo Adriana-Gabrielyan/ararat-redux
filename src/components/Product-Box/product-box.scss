@@ -1,0 +1,49 @@
+@import "../global/variables";
+
+.product-box {
+  background-color: #FBFAFA;
+  width: 208px;
+  margin: 15px;
+  text-align: center;
+  padding: 24px 018px;
+  transition: .3s all;
+  display: block;
+  border: 1px solid transparent;
+  &:hover {
+    border: 1px solid $gold;
+    transition: .3s all;
+    text-decoration: none;
+
+  }
+
+  .price {
+    margin: 34px 0 19px;
+    transition: .3s all;
+
+    span {
+      &:first-child {
+        font: 12px/13px $font-regular-2;
+      }
+
+      &:last-child {
+        font: 16px/18px $font-regular;
+      }
+    }
+  }
+
+  .product-img-div {
+    height: 226px;
+    display: flex;
+    margin-bottom: 29px;
+
+    img {
+      margin-top: auto;
+      max-height: 100%;
+    }
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
